@@ -50,7 +50,7 @@ public class ExcelUtility {
  * @return
  * @throws Throwable
  */
-	
+	//formal agruments
 	public String getExcelData(String filePath, String shettName , int rowNum , int colNum) throws Throwable {
 		FileInputStream fis = new FileInputStream(filePath);
 		Workbook wb = WorkbookFactory.create(fis);
@@ -68,6 +68,8 @@ public class ExcelUtility {
 	 * @return
 	 * @throws Throwable
 	 */
+	
+	//Actual arguments
 	public String getExcelData(String sheetName , String expTestID , String expColHEader) throws Throwable {
 		
 				int expTestRow = 0;
@@ -143,12 +145,3 @@ public class ExcelUtility {
 	
 	
 }
-
-
-
-
-
-
-
-
-

@@ -27,8 +27,11 @@ public class SampleTest_WithOut_POM {
 	
 	Login lp = new Login(driver);  
 
- 
- lp.loginToApp();
+	//Login lp=new Login(driver);				//Getters()
+	//lp.getUsernameEdt.sendKeys("admin");
+	//lp.getPasswordEdt.sendKeys("admin");	
+	//lp.getLoginBtn().click();		//OR
+ lp.loginToApp();//loginToApp() is present in Login class(objectrepository package)		//Business()
 	  
 	}
 	  

@@ -18,6 +18,8 @@ public class Login {   //rule -1
 	
 	public Login(WebDriver driver) {             //Rule -4
 		PageFactory.initElements(driver, this);
+		//PageFactory is a extended design of POM and its job is when we create obj. to the Login class, 
+		//all the annotation will be executed and then intialized 
 	}
 	
 	
@@ -26,17 +28,20 @@ public class Login {   //rule -1
 	
     @FindBy(name="user_name")                   //Rule -2 
     private WebElement usernameEdt;
+    //@FindBy is preffered becz it identifies the element based on the address of the user_name of the element 
+    //and not by the reference/element locators
     
     @FindBy(name="user_password")
     private WebElement passwordEdt;
     
     @FindBy(id="submitButton")
     private WebElement loginButon;
-    
+   //Traditional way of identifying the POM(Public) 
 
 	    
     
-
+//Getters are used in order to provide read access and no setters are used here.
+//Getters can be reusable but cannot be modified
 	public WebElement getUsernameEdt() {        //rule-3
 		return usernameEdt1;
 	}
@@ -54,11 +59,12 @@ public class Login {   //rule -1
 		passwordEdt.sendKeys(password);
 		loginButon.click();
 	}
+	//Its is a Business Library/WorkFlow Library
 	public void loginToApp() {             //Rule -5
 		usernameEdt1.sendKeys("admin");
 		passwordEdt.sendKeys("admin");
 		loginButon.click();
 	}
     
-    
+    //Hence this process is called encapsulation in Java
 }

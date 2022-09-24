@@ -99,7 +99,7 @@ public class CreateContact {
 		    Contacts cp = new Contacts(driver);
 		    cp.getCreateOrgImg().click();
 
-		/* step 7 : creat new Contact with Org */
+		/* step 7 : create new Contact with Org */
             CreateNewConatct cnc = new CreateNewConatct(driver);
             cnc.createConatct(contLastNAme, orgName);
 

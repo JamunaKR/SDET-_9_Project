@@ -21,45 +21,24 @@ public class Organizations {
 	@FindBy(name="search_text")
 	private WebElement searchEdt;
 	
-	@FindBy(name="search")
-	private WebElement searchNow;
-	
-	
-	
-	
-	
+	@FindBy(name="submit")
+	private WebElement searchNow;	
+
 	
 	public WebElement getInDropDown() {
 		return inDropDown;
 	}
-
-
-
-
-
 
 	public WebElement getSearchEdt() {
 		return searchEdt;
 	}
 
 
-
-
-
-
 	public WebElement getSearchNow() {
 		return searchNow;
 	}
 
-
-
-
-
-
 	public WebElement getCreateOrgImg() {
 		return createOrgImg;
 	}
-	
-	
-
 }

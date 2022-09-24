@@ -24,7 +24,7 @@ public class FileUtility {
 			 pObj.load(fis);
 			 String value = pObj.getProperty(key);
 		
-		return value;
+		return value;//Pass a key and will provide the value
 	}
 
 }
